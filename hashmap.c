@@ -111,7 +111,16 @@ Pair * searchMap(HashMap * map,  char * key) {
 
 Pair * firstMap(HashMap * map) {
 
-    return NULL;
+     long indice=0;;
+    
+    while(map->buckets[indice]==NULL && map->buckets[indice]->key==NULL){
+        
+        indice++;
+        if(indice==map->capacity)return NULL;
+        
+    }
+    map->current=indice;
+    return map->buckets[indice];
 }
 
 Pair * nextMap(HashMap * map) {
