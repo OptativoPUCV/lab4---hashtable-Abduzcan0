@@ -43,7 +43,14 @@ void insertMap(HashMap * map, char * key, void * value) {
 
     long indice=hash( key,map->capacity);
     
-    
+    while(map->buckets[indice]->key!=NULL){
+        
+        indice++;
+        if(indice==map->capacity){
+            indice=0;
+        }
+        
+    }
     map->buckets[indice]=(Pair*)malloc(sizeof(Pair));
     map->buckets[indice]->key=key;
     map->buckets[indice]->value=value;
