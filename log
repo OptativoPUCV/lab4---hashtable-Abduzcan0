@@ -37,3 +37,14 @@ Wed 12 Apr 2023 08:14:19 PM UTC:
  tests:  1|5
 total_score: 10/70
 0e3ce36
+Wed 12 Apr 2023 10:07:35 PM UTC: 
+ hashmap.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:4:
+hashmap.c: In function ‘createMap’:
+hashmap.c:62:12: error: ‘*mapa.buckets’ may be used uninitialized [-Werror=maybe-uninitialized]
+   62 |        mapa->buckets[i]=NULL;
+      |        ~~~~^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+864f773
