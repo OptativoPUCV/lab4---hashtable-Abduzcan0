@@ -94,3 +94,14 @@ Wed 12 Apr 2023 10:33:26 PM UTC:
  tests:  5|4
 total_score: 30/70
 2331110
+Wed 12 Apr 2023 10:34:20 PM UTC: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:46:17: error: comparison between pointer and integer [-Werror]
+   46 |     while(indice!=NULL){
+      |                 ^~
+cc1: all warnings being treated as errors
+Compilation failed
+8e72f75
