@@ -60,3 +60,14 @@ Wed 12 Apr 2023 10:08:51 PM UTC:
  tests:  1|5
 total_score: 10/70
 57a4067
+Wed 12 Apr 2023 10:20:29 PM UTC: 
+ hashmap.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:44:10: error: unused variable ‘indice’ [-Werror=unused-variable]
+   44 |     long indice=hash( key,map->capacity);
+      |          ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+6c78e47
