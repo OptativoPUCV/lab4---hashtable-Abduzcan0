@@ -62,7 +62,9 @@ HashMap * createMap(long capacity) {
     for(long i=0;i<capacity;i++){
        mapa->buckets[i]=NULL; 
     }
-    
+    mapa->size=0;
+    mapa->capacity=capacity;
+    mapa->current=-1; 
     return mapa;
 }
 
