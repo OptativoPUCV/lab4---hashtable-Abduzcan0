@@ -59,7 +59,8 @@ void insertMap(HashMap * map, char * key, void * value) {
 }
 
 void enlarge(HashMap * map) {
-
+    Pair **aux;
+    
     enlarge_called = 1; //no borrar (testing purposes)
 
 
